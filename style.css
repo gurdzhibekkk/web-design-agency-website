@@ -1,0 +1,113 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+img.logo {
+  max-width: 40%;
+  display: block;
+}
+
+h1 {
+  font-size: 5rem;
+  display: block;
+  max-width: 100%;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+  clear: both;
+}
+
+h1 span {
+  color: midnightblue;
+}
+
+div.left,
+div.right {
+  width: 50%;
+  float: left;
+}
+
+div.left img,
+div.right img {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  div.left,
+  div.right {
+    float: none;
+    display: block;
+    width: 100%;
+  }
+
+  div.left img,
+  div.right img {
+    margin: 0;
+    float: none;
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media (min-width: 481px) and  (max-width: 1200px) {
+  h2 {
+    margin-left: 20px;
+  }
+
+  div.left img,
+  div.right img {
+    max-width: 60%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1201px) {
+
+  div.left img,
+  div.right img {
+    max-width: 50%;
+    height: auto;
+    float: left;
+  }
+}
